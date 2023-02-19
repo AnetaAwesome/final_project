@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+<title> {% block title %} My blog {% endblock %}</title>
+
+{% block main_content %}
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    <table>
+        {{ form }}
+        <tr><td>{% if cancel %} Cancel {% endif %} </td><td><input type="submit" value="Submit"></td></tr>
+    </table>
+</form>
+
+{% endblock %}

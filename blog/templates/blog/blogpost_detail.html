@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+
+
+<head>
+   {% block title %} Szczegóły postu {% endblock %}
+</head>
+
+<body>
+{% block main_content %}
+<h1> {{ blogpost.title }}</h1>
+
+<p>
+    {{ blogpost.content }}
+</p>
+
+<p><i> utworzono: {{ blogpost.creation_date }}</i></p>
+{% endblock %}
+</body>
