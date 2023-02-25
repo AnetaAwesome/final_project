@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+
+{% block main_content %}
+
+<h1><strong>   Are you sure you want to delete: {{ object }} ?  </strong> </h1>
+
+ <form action="" method="POST">
+      {% csrf_token %}
+
+
+      {% if cancel %} <a href="{{ cancel }}"> Anuluj </a> {% endif %}
+     <input type="submit" value="Confirm">
+ </form>
+
+
+
+{%endblock %}
