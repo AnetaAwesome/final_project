@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms import ModelForm
 
 class BlogPost(models.Model):
     """  Simple class defining post on blog  """
@@ -25,3 +26,15 @@ class Contact(models.Model):
     class Meta:
         verbose_name = "Kontakt"
         verbose_name_plural = "Kontakty"
+
+
+# class BlogPostForm(ModelForm):
+#     class Meta:
+#         model = BlogPost
+#         fields = ["title", "content"]
+#
+#
+# class ContactForm(ModelForm):
+#     class Meta:
+#         model = Contact
+#         fields = ["first_name", "last_name", "email_field", "note"]
