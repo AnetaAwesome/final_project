@@ -13,6 +13,12 @@
     {{ blogpost.content }}
 </p>
 
-<p><i> utworzono: {{ blogpost.creation_date }}</i></p>
+<p><i> Utworzono: {{ blogpost.creation_date }}</i></p>
+
+<p>
+    <a href="{% url 'blogpost_update' blogpost.pk %}"> Edytuj</a>
+    <a href="{% url 'blogpost_delete' blogpost.pk %}"> Usuń </a>
+</p>
+
 {% endblock %}
 </body>

@@ -25,8 +25,6 @@ K
 blog/tests.py,a\d\ad2fa097158bb799ebb227eaa60d28b415e3f7c6
 P
  final_project_django/settings.py,5\0\502ee993f490138e3ccbfe8e0fe9ffcfa6e4608c
-=
-blog/admin.py,9\f\9f9560753a3e5c777e2281279748008e37d22c37
 L
 final_project_django/urls.py,e\7\e7b5399defba4867d6f1960e3ef01eca4da86975
 R

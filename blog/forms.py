@@ -17,7 +17,7 @@ class ContactForm(forms.ModelForm):
     first_name = forms.CharField(widget=forms.TextInput, label="Imię"),
     last_name = forms.CharField(label="Nazwisko", widget=forms.TextInput(attrs={'placeholder': "Nazwisko"})),
     email_field = forms.EmailField(label="E-mail", widget=forms.TextInput(attrs={'placeholder': "E-mail"})),
-    note = forms.CharField(widget=forms.Textarea, label="Wiadomość")
+    note = forms.CharField(widget=forms.Textarea, label="Tresć Wiadomość")
 
     class Meta:
         model = Contact
