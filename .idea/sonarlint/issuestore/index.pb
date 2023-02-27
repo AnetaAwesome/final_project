@@ -23,11 +23,11 @@ K
 blog/apps.py,5\1\51955899fc35f65c8f4e3a7b417395ce65636ebd
 =
 blog/tests.py,a\d\ad2fa097158bb799ebb227eaa60d28b415e3f7c6
-P
- final_project_django/settings.py,5\0\502ee993f490138e3ccbfe8e0fe9ffcfa6e4608c
+W
+'blog/templates/blog/confirm_delete.html,3\4\34c8723ee1b7c559a6803a93bae633d93126546b
+R
+"blog/templates/blog/thank_you.html,9\5\95ec96764cc00bd86aa9ee1813480ddd29a83a22
 L
 final_project_django/urls.py,e\7\e7b5399defba4867d6f1960e3ef01eca4da86975
-R
-"blog/templates/blog/main_page.html,7\4\747045c64145a7f48e88eb478e9d84bfbb3c1f06
-O
-blog/migrations/0001_initial.py,6\a\6ac04652113ffb17787ba12d1b36b7a14c3a7a7a
+U
+%blog/templates/blog/contact_form.html,6\c\6c2a554139bf6a3a058c9989263bec744e95f1e7

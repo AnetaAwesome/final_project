@@ -19,6 +19,23 @@
     <a href="{% url 'blogpost_update' blogpost.pk %}"> Edytuj</a>
     <a href="{% url 'blogpost_delete' blogpost.pk %}"> Usuń </a>
 </p>
+<br/>
+<h2> Dodaj komentarz</h2>
+    {% if not blogpost.comments.all %}
+    Nie ma jeszcze komentarzy <a href="{% url 'comment_create' blogpost.pk %}"> Dodaj komentarz</a>
+    {% else %}
+
+        {% for comment in blogpost.comments.all %}
+        <strong> {{ comment.name }}
+                 {{ comment.created_on }} </strong>
+        <br/>
+                {{ comment.body }}
+        <br/><br/>
+
+        {% endfor %}
+            <a href="{% url 'comment_create' blogpost.pk %}">Dodaj komentarz</a>
+    {% endif %}
+
 
 {% endblock %}
 </body>

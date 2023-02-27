@@ -2,8 +2,24 @@
 
 <head>
    {% block title %} Strona główna {% endblock %}
-
 </head>
+<body>
+{% block main_content %}
+    <h2>Blog</h2>
+
+    <p>
+    {% for blogpost in object_list %}
+            <h5> {{ blogpost.creation_date }}</h5>
+            <h3> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }}</a></h3>
+            <p> {{ blogpost.content }} </p>
+    {% endfor %}
+    </p>
 
 
-<!--lista postów-->
+{% endblock %}
+
+</body>
+
+
+
+
