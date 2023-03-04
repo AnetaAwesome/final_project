@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import JsonResponse
 from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, TemplateView, UpdateView, DeleteView, ListView
 from .models import BlogPost, Contact, Comment
@@ -69,7 +70,9 @@ class CommentCreate(CreateView):
 
     def form_valid(self, form):
         form.instance.post_id = self.kwargs['pk']
-        return super().form_valid(form)
+        super().form_valid(form)
+        response_data = {'message': 'Success!'}
+        return JsonResponse(response_data)
 
     def get_success_url(self):
         pk = self.kwargs["pk"]
