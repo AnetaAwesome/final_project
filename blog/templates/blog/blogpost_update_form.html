@@ -3,14 +3,14 @@
 <title> {% block title %} My blog {% endblock %}</title>
 
 {% block main_content %}
-<h3> Utwórz nowy post</h3>
+<h3> Edytuj post</h3>
 
 <form action="" method="post" novalidate>
     {% csrf_token %}
     <table>
         {{ form }}
-        <tr><td>{% if cancel %} Cancel {% endif %} </td><td><input type="submit" value="Wyślij"></td></tr>
-
+<!--        <tr><td><button type="submit">Aktualizuj</button></td></tr>-->
+            <tr><td><input type="submit" value="Aktualizuj"></td></tr>
     </table>
 </form>
 

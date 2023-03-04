@@ -2,12 +2,26 @@
 <! DOCTYPE html>
 <html>
 <head>
-    <title> {% block title %} Test title {% endblock %}</title>
+        <title> {% block title %} Test title {% endblock %}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
 
+    <div class="banner">
+        <p class="display-1">MATKA NASTOLATKA</p>
+        <p class="lead">O relacjach rodzica z nastolatkiem</p>
+
+<!--    {% load static %}-->
+<!--    <img class="banner" src="{% static 'blog/images/logo_bg_second.jpeg' %}" alt="Background_picture">-->
+    </div>
 </head>
 <body>
+
+
+    {% include "./menu.html" %}
+
+
+
 <div id="main_content">
         {% block main_content %}
 
