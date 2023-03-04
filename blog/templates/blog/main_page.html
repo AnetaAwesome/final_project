@@ -21,7 +21,7 @@
             {% with blogpost.comments.count as total_comments %}
             <h4>   Liczba komentarzy: {{ total_comments }}   </h4>
             {% endwith %}
-
+            <br/>
     {% endfor %}
     </p>
       </div>
@@ -31,7 +31,7 @@
 
 <div class="rightcolumn">
     <div class="card">
-    <form style="margin:auto;max-width:300px">
+    <form>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <input name="q_s" type="text" placeholder="Szukaj...">
@@ -40,12 +40,15 @@
 
     </form>
 
-
-
 </div>
     <div class="card">
-      <h3>Ostatnie wpisy</h3>
-        <p> tytuł posta - do napisania w viewsach </p>
+      <h4>OSTATNIE WPISY</h4>
+        <p> {% for blogpost in object_list %}
+
+            <h4> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }} </a></h4>
+
+            {% endfor %}
+        </p>
     </div>
     <div class="card">
 {% endblock %}
