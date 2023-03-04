@@ -5,17 +5,49 @@
 </head>
 <body>
 {% block main_content %}
-    <h2>Blog</h2>
+
+<div class="row">
+  <div class="leftcolumn">
+
+    <div class="card">
+    <h3>BLOG</h3>
 
     <p>
     {% for blogpost in object_list %}
             <h5> {{ blogpost.creation_date }}</h5>
-            <h3> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }}</a></h3>
+            <h2> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }} </a></h2>
             <p> {{ blogpost.content }} </p>
+
+            {% with blogpost.comments.count as total_comments %}
+            <h4>   Liczba komentarzy: {{ total_comments }}   </h4>
+            {% endwith %}
+
     {% endfor %}
     </p>
+      </div>
+    </div>
+</div>
+<div class="card"></div>
+
+<div class="rightcolumn">
+    <div class="card">
+    <form style="margin:auto;max-width:300px">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <input name="q_s" type="text" placeholder="Szukaj...">
+        <button title="Search"><i class="fa fa-search"></i></button>
+        <a href="{% url 'main_page' %}" ></a>
+
+    </form>
 
 
+
+</div>
+    <div class="card">
+      <h3>Ostatnie wpisy</h3>
+        <p> tytuł posta - do napisania w viewsach </p>
+    </div>
+    <div class="card">
 {% endblock %}
 
 </body>

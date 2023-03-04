@@ -1,8 +1,6 @@
 
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-@
-requirements.txt,1\9\19359a61ae2446b51b549167b014da2fcf265768
 ^
 ..idea/inspectionProfiles/profiles_settings.xml,1\e\1e9075f5bf079c01ef2c910709e91a497d262080
 w
@@ -23,11 +21,9 @@ K
 blog/apps.py,5\1\51955899fc35f65c8f4e3a7b417395ce65636ebd
 =
 blog/tests.py,a\d\ad2fa097158bb799ebb227eaa60d28b415e3f7c6
-W
-'blog/templates/blog/confirm_delete.html,3\4\34c8723ee1b7c559a6803a93bae633d93126546b
 R
 "blog/templates/blog/thank_you.html,9\5\95ec96764cc00bd86aa9ee1813480ddd29a83a22
-L
-final_project_django/urls.py,e\7\e7b5399defba4867d6f1960e3ef01eca4da86975
-U
-%blog/templates/blog/contact_form.html,6\c\6c2a554139bf6a3a058c9989263bec744e95f1e7
+=
+blog/admin.py,9\f\9f9560753a3e5c777e2281279748008e37d22c37
+O
+blog/migrations/0001_initial.py,6\a\6ac04652113ffb17787ba12d1b36b7a14c3a7a7a

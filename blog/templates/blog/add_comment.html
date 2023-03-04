@@ -3,15 +3,15 @@
 <title> {% block title %} Dodaj komentarz {% endblock %}</title>
 
 {% block main_content %}
-    <h1> Dodaj komentarz</h1>
+    <h3> Dodaj komentarz</h3>
     <br/><br/>
 <form action="" method="post" novalidate>
     {% csrf_token %}
     <table>
         {{ form }}
     </table>
-    <button type="button" class="btn btn-secondary">Opublikuj komentarz</button>
 
+    <tr><td><input type="submit" value="Opublikuj komentarz"></td></tr>
 
 </form>
 

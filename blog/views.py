@@ -15,7 +15,14 @@ class BlogPostView(TemplateView):
 class BlogPostList(ListView):
     model = BlogPost
     template_name = 'blog/main_page.html'
-    queryset = BlogPost.objects.order_by('-creation_date')
+
+    def get_queryset(self):
+        q_s = self.request.GET.get('q_s')
+        if q_s:
+            object_list = self.model.objects.filter(content__icontains=q_s)
+        else:
+            object_list = self.model.objects.all()
+        return object_list.order_by('-creation_date')
 
 
 class BlogPostCreate(CreateView):
@@ -31,7 +38,7 @@ class BlogPostCreate(CreateView):
 
 class BlogPostUpdateView(UpdateView):
     model = BlogPost
-    fields = '__all__'
+    form_class = BlogPostForm
     template_name = 'blog/blogpost_update_form.html'
 
     def get_context_data(self, **kwargs):
@@ -60,13 +67,13 @@ class CommentCreate(CreateView):
     # fields = '__all__'
     template_name = 'blog/add_comment.html'
 
-    def get_success_url(self):
-        return reverse('blogpost_detail', kwargs={'pk': self.object.pk})
+    def form_valid(self, form):
+        form.instance.post_id = self.kwargs['pk']
+        return super().form_valid(form)
 
-    # def form_valid(self, form):
-    #     form.instance.blogpost_id = self.kwargs['pk']
-    #     return super().form_valid(form)
-    # success_url = reverse_lazy('blogpost_detail')
+    def get_success_url(self):
+        pk = self.kwargs["pk"]
+        return reverse("blogpost_detail", kwargs={"pk": pk})
 
 
 # class ContactFormView(FormView):

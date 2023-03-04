@@ -17,4 +17,5 @@ urlpatterns = [
     path("contact/", views.contact_form, name='contact'),
     path('thank_you/', views.thank_you_view, name='thank_you'),
     path('blog_post/<int:pk>/comment/', views.CommentCreate.as_view(), name='comment_create'),
+    # path('search_results/', views.)
 ]
