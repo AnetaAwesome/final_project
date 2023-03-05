@@ -21,9 +21,45 @@ K
 blog/apps.py,5\1\51955899fc35f65c8f4e3a7b417395ce65636ebd
 =
 blog/tests.py,a\d\ad2fa097158bb799ebb227eaa60d28b415e3f7c6
-R
-"blog/templates/blog/thank_you.html,9\5\95ec96764cc00bd86aa9ee1813480ddd29a83a22
 =
 blog/admin.py,9\f\9f9560753a3e5c777e2281279748008e37d22c37
 O
 blog/migrations/0001_initial.py,6\a\6ac04652113ffb17787ba12d1b36b7a14c3a7a7a
+W
+'blog/templates/blog/confirm_delete.html,3\4\34c8723ee1b7c559a6803a93bae633d93126546b
+w
+G.idea/sonarlint/issuestore/c/6/c676b042558d0dce3730fa4dacd644a4637c9f73,7\9\79299acb1d17ec8657d82fa48f204a3d3128728e
+w
+G.idea/sonarlint/issuestore/1/8/1857e19d03446bf6c66abb53221b1409b54d32cd,f\4\f4f746a4a68b0f7313ad890b526aa1e62ea0e678
+w
+G.idea/sonarlint/issuestore/1/e/1e9075f5bf079c01ef2c910709e91a497d262080,2\5\2511a7590eb091d560dac1615e6bcef0ceeaffb6
+w
+G.idea/sonarlint/issuestore/2/c/2cc1fb7137ff20ed48461a344f6d86cdbd47c8ff,6\e\6ea1439f921397c8aeadfa4bc58b8c2619a1d4ce
+w
+G.idea/sonarlint/issuestore/3/1/3156ad13e4d695cd526bbb7b031016ecba842270,7\f\7f66578bb3ba362403b0874dbbb8d3e9e733ab4d
+w
+G.idea/sonarlint/issuestore/5/1/51955899fc35f65c8f4e3a7b417395ce65636ebd,1\d\1dd90a6ff89deb9e5ebf47df583e6d6c6637834d
+w
+G.idea/sonarlint/issuestore/6/5/65c39dbe5d8eb624135eb41c4ccb209ac5613c59,6\c\6c1b4a1e5896b1e483d8246668539b3a0260be68
+w
+G.idea/sonarlint/issuestore/6/a/6ac04652113ffb17787ba12d1b36b7a14c3a7a7a,0\1\01b6c2afdb134d0e3ffd86660bbe0591060d76fe
+Y
+)blog/templates/blog/create_post_view.html,1\4\140629231190d41a7eaeb8c8c37468e69d31b1c7
+]
+-blog/templates/blog/blogpost_update_form.html,d\7\d74bdb3306a747b2d5dcbfa70dd019c4e17623df
+w
+G.idea/sonarlint/issuestore/7/5/755185242f8ac2c974158b19693bc8e4bdcfbba9,6\2\6294dc75d76903aecbd8b625d91b3cf375f2effc
+O
+blog/migrations/0002_comment.py,2\6\26297a3e8ce92963d8dfb2d01968e92d3c88f8e9
+Z
+*blog/migrations/0003_alter_comment_post.py,6\9\69986ba6267bad85227627a77c48bcfbe2053ba2
+w
+G.idea/sonarlint/issuestore/9/f/9f9560753a3e5c777e2281279748008e37d22c37,7\f\7f440936d0d77aaa5a89b826a46c3074ded22492
+w
+G.idea/sonarlint/issuestore/a/d/ad2fa097158bb799ebb227eaa60d28b415e3f7c6,a\1\a199727e1b502fba7bbf92881aa4e95f9cc7b9ef
+w
+G.idea/sonarlint/issuestore/b/4/b4a0b63ce8560bbc5de0f9995c20cc861dc2adb3,b\0\b04578cffb47b1e57970601a0cacef6081245859
+@
+requirements.txt,1\9\19359a61ae2446b51b549167b014da2fcf265768
+T
+$blog/templates/blog/add_comment.html,6\d\6d64d8934bdd18b84dec3cd0d8cea0b93c00abe7

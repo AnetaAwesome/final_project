@@ -1,5 +1,7 @@
 from django.urls import path
 from django.views.generic import DetailView, RedirectView
+from django.conf import settings
+from django.conf.urls.static import static
 from . import views
 from . import models
 
@@ -17,5 +19,5 @@ urlpatterns = [
     path("contact/", views.contact_form, name='contact'),
     path('thank_you/', views.thank_you_view, name='thank_you'),
     path('blog_post/<int:pk>/comment/', views.CommentCreate.as_view(), name='comment_create'),
-    # path('search_results/', views.)
-]
+
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

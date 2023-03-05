@@ -3,6 +3,7 @@
 <head>
    {% block title %} Strona główna {% endblock %}
 </head>
+
 <body>
 {% block main_content %}
 
@@ -24,14 +25,14 @@
             <br/>
     {% endfor %}
     </p>
-      </div>
+
     </div>
 </div>
 <div class="card"></div>
 
 <div class="rightcolumn">
     <div class="card">
-    <form>
+    <form style="margin:auto;">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <input name="q_s" type="text" placeholder="Szukaj...">
@@ -41,16 +42,24 @@
     </form>
 
 </div>
-    <div class="card">
-      <h4>OSTATNIE WPISY</h4>
-        <p> {% for blogpost in object_list %}
 
-            <h4> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }} </a></h4>
+<div class="card">
+
+    <div style="margin:auto;max-width:800px">
+      <h4>OSTATNIE WPISY</h4>
+
+        <p> {% for blogpost in object_list|dictsortreversed:"creation_date" %}
+
+        <p> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }} </a></p>
+            <hr style="height: 0.3px; color: grey">
 
             {% endfor %}
         </p>
     </div>
-    <div class="card">
+</div>
+
+    <div class="card"></div>
+
 {% endblock %}
 
 </body>

@@ -3,14 +3,19 @@
 <title> {% block title %} My blog {% endblock %}</title>
 
 {% block main_content %}
+<div class="card">
 <h3> KONTAKT</h3>
 
-<p>Jeśli chcesz porozmawiać o wychowaniu nastolatka, szukasz inspiracji, wsparcia <br/>
+
+<p>Jeśli chcesz porozmawiać o wychowaniu nastolatka, szukasz inspiracji, wsparcia
     zapraszam do kontaktu:
 <br/><br/>
 Aneta Adaszyńska <br/>
 tel. +48 609 53 92 93<br/>
 Wrocław, ul. Deszczowa 14</p>
+</div>
+
+<div class="card">
 
 <form action="" method="post" novalidate>
     {% csrf_token %}

@@ -1,3 +1,4 @@
+from django.db.models import Q
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.urls import reverse, reverse_lazy
@@ -20,7 +21,7 @@ class BlogPostList(ListView):
     def get_queryset(self):
         q_s = self.request.GET.get('q_s')
         if q_s:
-            object_list = self.model.objects.filter(content__icontains=q_s)
+            object_list = self.model.objects.filter(Q(content__icontains=q_s) | Q(title__icontains=q_s))
         else:
             object_list = self.model.objects.all()
         return object_list.order_by('-creation_date')
