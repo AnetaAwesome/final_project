@@ -2,7 +2,7 @@
 <html>
     <head>
 
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
 
     </head>
 
@@ -10,11 +10,12 @@
 <body>
 <section>
 <nav>
-<div class="topnav">
-  <a href="{% url 'main_page' %}">STRONA GŁÓWNA</a>
-  <a href="{% url 'contact' %}">KONTAKT</a>
+    <div class="topnav">
+        <a href="{% url 'about_me' %}">O MNIE</a>
+        <a href="{% url 'main_page' %}">BLOG</a>
+        <a href="{% url 'contact' %}">KONTAKT</a>
 
-</div>
+    </div>
 
 </nav>
 </section>
