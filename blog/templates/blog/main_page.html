@@ -32,6 +32,7 @@
 
 <div class="rightcolumn">
     <div class="card">
+        <br/>
     <form style="margin:auto;">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,13 +49,13 @@
     <div style="margin:auto;max-width:800px">
       <h4>OSTATNIE WPISY</h4>
 
-        <p> {% for blogpost in object_list|dictsortreversed:"creation_date" %}
+        <p> {% for blogpost in object_list|dictsortreversed:"creation_date" %} </p>
 
         <p> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }} </a></p>
             <hr style="height: 0.3px; color: grey">
 
             {% endfor %}
-        </p>
+
     </div>
 </div>
 

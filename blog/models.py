@@ -1,9 +1,8 @@
 from django.db import models
 from django.forms import ModelForm
 
-class BlogPost(models.Model):
-    """  Simple class defining post on blog  """
 
+class BlogPost(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
     creation_date = models.DateTimeField(auto_now_add=True)
@@ -14,6 +13,7 @@ class BlogPost(models.Model):
     class Meta:
         verbose_name = "Wpis"
         verbose_name_plural = "Wpisy"
+
 
 class Comment(models.Model):
     post = models.ForeignKey(BlogPost, related_name='comments', on_delete=models.CASCADE)
@@ -32,8 +32,6 @@ class Comment(models.Model):
 
 
 class Contact(models.Model):
-    """  Pass arguments to Contact form """
-
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     email_field = models.EmailField(max_length=254)

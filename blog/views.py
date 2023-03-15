@@ -7,14 +7,13 @@ from .models import BlogPost, Contact, Comment
 from .forms import BlogPostForm, ContactForm, CommentForm
 from blog import forms
 
-class BlogPostView(TemplateView):
-    template_name = 'blog/main_page.html'
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return context
+class AboutMe(TemplateView):
+    template_name = 'blog/about_me.html'
+
 
 class BlogPostList(ListView):
+    """ List of posts """
     model = BlogPost
     template_name = 'blog/main_page.html'
 
@@ -28,10 +27,9 @@ class BlogPostList(ListView):
 
 
 class BlogPostCreate(CreateView):
-    ''' Creates new post view '''
+    """  New post creation  """
     model = BlogPost
     form_class = BlogPostForm
-    # fields = '__all__'
     template_name = 'blog/create_post_view.html'
 
     def get_success_url(self):
@@ -39,6 +37,7 @@ class BlogPostCreate(CreateView):
 
 
 class BlogPostUpdateView(UpdateView):
+    """  Post update  """
     model = BlogPost
     form_class = BlogPostForm
     template_name = 'blog/blogpost_update_form.html'
@@ -53,6 +52,7 @@ class BlogPostUpdateView(UpdateView):
 
 
 class BlogPostDeleteView(DeleteView):
+    """ Post removal"""
     model = BlogPost
     success_url = reverse_lazy('thank_you')
     template_name = 'blog/confirm_delete.html'
@@ -62,8 +62,9 @@ class BlogPostDeleteView(DeleteView):
         context['cancel'] = reverse('blogpost_detail', kwargs={'pk': self.object.pk})
         return context
 
+
 class CommentCreate(CreateView):
-    ''' Creates new comment view '''
+    """  New comment creation"""
     model = Comment
     form_class = CommentForm
     # fields = '__all__'
@@ -80,16 +81,8 @@ class CommentCreate(CreateView):
         return reverse("blogpost_detail", kwargs={"pk": pk})
 
 
-# class ContactFormView(FormView):
-#     ''' Defines contact form'''
-#     form_class = ContactForm
-#     # model = Contact
-#     # fields = '__all__'
-#     template_name = 'blog/contact_form.html'
-#     success_url = reverse_lazy('blog:thank-you')
-#
-#     def get_success_url(self):
-#         return reverse('thank_you')
+""" Function based view  """
+
 
 def contact_form(request):
     form = ContactForm(request.POST or None)

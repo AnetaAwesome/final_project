@@ -10,6 +10,7 @@ $(function() {
         // handle a successful response
         success : function(json) {
             this.reset(); //
+            $('#results').html("<div class='alert alert-success'>Komentarz został dodany!</div>")
             console.log(json); // log the returned json to the console
             console.log("success");
         },
