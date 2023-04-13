@@ -1,4 +1,6 @@
 {% extends 'blog/base.html' %}
+<! DOCTYPE html>
+<html>
 
 <head>
    {% block title %} Strona główna {% endblock %}
@@ -6,6 +8,22 @@
 
 <body>
 {% block main_content %}
+
+<div class="login">
+      <h4> Witaj, {{ user.username|default:'Gościu' }}!</h4>
+
+    <div>
+        {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}">Wyloguj się</a>
+            <a href="{% url 'password_change' %}">Zmień hasło</a>
+        {% else %}
+            <a href="{% url 'login' %}">Zaloguj się</a>
+        {% endif %}
+
+    </div>
+</div>
+<div class="card">
+
 
 <div class="row">
   <div class="leftcolumn">
@@ -22,7 +40,7 @@
             {% with blogpost.comments.count as total_comments %}
             <h4>   Liczba komentarzy: {{ total_comments }}   </h4>
             {% endwith %}
-            <br/>
+
     {% endfor %}
     </p>
 
@@ -32,8 +50,13 @@
 
 <div class="rightcolumn">
     <div class="card">
+ feature/login
+    <div class="card">
+
+=======
 feature/sub_page
-        <br/>
+       
+master
     <form style="margin:auto;">
 
     <form>
@@ -54,12 +77,12 @@ feature/sub_page
     <div style="margin:auto;max-width:800px">
       <h4>OSTATNIE WPISY</h4>
 
-        <p> {% for blogpost in object_list|dictsortreversed:"creation_date" %} </p>
+         {% for blogpost in object_list|dictsortreversed:"creation_date" %}
 
-        <p> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }} </a></p>
-            <hr style="height: 0.3px; color: grey">
+            <p> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }} </a></p>
+            <hr>
 
-            {% endfor %}
+        {% endfor %}
 
 =======
     <div class="card">
@@ -79,6 +102,9 @@ master
 {% endblock %}
 
 </body>
+
+</html>
+
 
 
 

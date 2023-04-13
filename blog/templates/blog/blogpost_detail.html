@@ -15,10 +15,16 @@
 
 <p><i> Utworzono: {{ blogpost.creation_date }}</i></p>
 
-<p>
-    <a href="{% url 'blogpost_update' blogpost.pk %}"> Edytuj</a>
-    <a href="{% url 'blogpost_delete' blogpost.pk %}"> Usuń </a>
-</p>
+ <div>
+        {% if user.is_authenticated %}
+            <a href="{% url 'blogpost_update' blogpost.pk %}"> Edytuj</a>
+            <a href="{% url 'blogpost_delete' blogpost.pk %}"> Usuń </a>
+        {% else %}
+            <a href="{% url 'login' %}">Zaloguj się aby dodać komentarz</a>
+        {% endif %}
+
+    </div>
+
 <br/>
 <h2> Dodaj komentarz</h2>
     {% if not blogpost.comments.all %}

@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+
+<title> {% block title %} Login {% endblock %}</title>
+
+{% block main_content %}
+<h3> LOGOWANIE </h3>
+
+    <form method="post">
+        {% csrf_token %}
+
+            {{ form.as_p }}
+            <input type="submit" value="Zaloguj się">
+
+    </form>
+
+    <a href="{% url 'main_page' %}"> Powrót na stronę głowną</a>
+
+{% endblock %}
