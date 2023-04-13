@@ -1,6 +1,4 @@
 
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 ^
 ..idea/inspectionProfiles/profiles_settings.xml,1\e\1e9075f5bf079c01ef2c910709e91a497d262080
 w
@@ -23,8 +21,6 @@ K
 blog/admin.py,9\f\9f9560753a3e5c777e2281279748008e37d22c37
 O
 blog/migrations/0001_initial.py,6\a\6ac04652113ffb17787ba12d1b36b7a14c3a7a7a
-W
-'blog/templates/blog/confirm_delete.html,3\4\34c8723ee1b7c559a6803a93bae633d93126546b
 w
 G.idea/sonarlint/issuestore/c/6/c676b042558d0dce3730fa4dacd644a4637c9f73,7\9\79299acb1d17ec8657d82fa48f204a3d3128728e
 w
@@ -41,10 +37,6 @@ w
 G.idea/sonarlint/issuestore/6/5/65c39dbe5d8eb624135eb41c4ccb209ac5613c59,6\c\6c1b4a1e5896b1e483d8246668539b3a0260be68
 w
 G.idea/sonarlint/issuestore/6/a/6ac04652113ffb17787ba12d1b36b7a14c3a7a7a,0\1\01b6c2afdb134d0e3ffd86660bbe0591060d76fe
-Y
-)blog/templates/blog/create_post_view.html,1\4\140629231190d41a7eaeb8c8c37468e69d31b1c7
-]
--blog/templates/blog/blogpost_update_form.html,d\7\d74bdb3306a747b2d5dcbfa70dd019c4e17623df
 w
 G.idea/sonarlint/issuestore/7/5/755185242f8ac2c974158b19693bc8e4bdcfbba9,6\2\6294dc75d76903aecbd8b625d91b3cf375f2effc
 O
@@ -57,8 +49,6 @@ w
 G.idea/sonarlint/issuestore/a/d/ad2fa097158bb799ebb227eaa60d28b415e3f7c6,a\1\a199727e1b502fba7bbf92881aa4e95f9cc7b9ef
 w
 G.idea/sonarlint/issuestore/b/4/b4a0b63ce8560bbc5de0f9995c20cc861dc2adb3,b\0\b04578cffb47b1e57970601a0cacef6081245859
-@
-requirements.txt,1\9\19359a61ae2446b51b549167b014da2fcf265768
 M
 blog/static/blog/css/menu.css,d\e\de8c7e3f7e612aeae21189fa92c93a231e99291b
 w
@@ -95,9 +85,55 @@ w
 G.idea/sonarlint/issuestore/6/2/6294dc75d76903aecbd8b625d91b3cf375f2effc,0\c\0cf9f9988eac507fffb578a21be61c10769d6a4a
 w
 G.idea/sonarlint/issuestore/f/4/f4f746a4a68b0f7313ad890b526aa1e62ea0e678,8\1\8141b92710f01eedd269ca2986bfa482cd18d7e4
-U
-%blog/templates/blog/contact_form.html,6\c\6c2a554139bf6a3a058c9989263bec744e95f1e7
 L
 final_project_django/urls.py,e\7\e7b5399defba4867d6f1960e3ef01eca4da86975
-X
-(blog/templates/blog/blogpost_detail.html,3\0\30d188d205e8e189747ad059fdc2143e8e97085b
+w
+G.idea/sonarlint/issuestore/b/f/bf26e38c6077dc99b98bdb7696e470de283480be,d\8\d81ba14e374526bee56e981572c66430ffec6cf9
+w
+G.idea/sonarlint/issuestore/8/1/8141b92710f01eedd269ca2986bfa482cd18d7e4,f\b\fb67bc9c65cec3821693ed21c3cc175f813a11a8
+w
+G.idea/sonarlint/issuestore/7/2/72d60672c1f4ee9fd0ef10acd6189a6dce5f9e9f,5\1\51f4a46ee3860af2c6cfa0846f5bf418ee0a7e4b
+w
+G.idea/sonarlint/issuestore/5/3/5374bba56301dc9ec0033a087baf39da4d2a328a,1\2\124966227e385488162b5c5887c4b8eccd2d5f62
+w
+G.idea/sonarlint/issuestore/4/4/4454ddbf1c48ac3903e66b0292fc58f56f863b84,c\8\c87b11690d9ed0597e85800f6535a052b9a014ed
+w
+G.idea/sonarlint/issuestore/d/e/de8c7e3f7e612aeae21189fa92c93a231e99291b,8\c\8ce3f7bb2f462575b440b9043a390f7f0d71c2c7
+w
+G.idea/sonarlint/issuestore/3/e/3e92864b618c5dd6706e84b969922252ed94b327,2\a\2aec5c3e7addd913b5cf244f654543c99f830ab2
+w
+G.idea/sonarlint/issuestore/0/e/0e77634ce75a66cc605dbc5e7c559a555e34c66b,c\6\c65037c8037a55a94254ecffebb62542958c4f07
+w
+G.idea/sonarlint/issuestore/0/c/0cf9f9988eac507fffb578a21be61c10769d6a4a,8\1\8121aff769296dbfde70948336d6331d216e4d37
+w
+G.idea/sonarlint/issuestore/0/b/0b86637e360d0d34fd6467500accdca8c7594b5b,6\e\6ee137338853dce6b865eb39cd285d695a5662b9
+w
+G.idea/sonarlint/issuestore/1/8/18214068b58c1008534ca39a211bf932cd4ed0b3,9\7\97659ba70f40d964d0787601c3b4f52b095cac82
+w
+G.idea/sonarlint/issuestore/e/7/e7b5399defba4867d6f1960e3ef01eca4da86975,b\7\b73c2d410cd0d0f4e035d61b446857f957e653b7
+=
+blog/forms.py,8\d\8dc45ed33dbcc8b65458ba016179df9d26f67b91
+w
+G.idea/sonarlint/issuestore/e/f/efe5a2c5bf354f630de7724de65c006176ab5f13,8\6\866bf9e0d57da1305b7d8f521048159a000100a7
+w
+G.idea/sonarlint/issuestore/e/8/e8e161c5dd2f448330b679b5874ecb1fddcce126,5\3\53c63421b0a3eade0d5fc998c5acdf1cae7b370d
+w
+G.idea/sonarlint/issuestore/6/9/692ae24acddaa54ef821d1c4372168a5d80d009c,5\4\54c0d5a7a0c411183369dfbf62950dd9110d5549
+w
+G.idea/sonarlint/issuestore/d/f/df7918e4de9e7f743e1f2f1b51cc7bc59b9f715f,0\8\08efbcc158f25ce58e7a64b041e4961e7dfa63d7
+w
+G.idea/sonarlint/issuestore/d/c/dc484b9c2f083a8413c30fe9947246b4642af1bb,0\0\009f204cd79566b4bbc1a122ac03111e1d77556f
+w
+G.idea/sonarlint/issuestore/c/a/cab4ef53a5387330efc599c18f64ec4b767a3d6e,4\0\40d3fac504fde373c41ff48b0e2fb2a1699f7cbd
+W
+'blog/templates/blog/confirm_delete.html,3\4\34c8723ee1b7c559a6803a93bae633d93126546b
+Y
+)blog/templates/blog/create_post_view.html,1\4\140629231190d41a7eaeb8c8c37468e69d31b1c7
+>
+blog/models.py,9\0\90f4c37dbfd7a96a1fb4496187f7e1fe7d61f3cf
+=
+blog/tests.py,a\d\ad2fa097158bb799ebb227eaa60d28b415e3f7c6
+=
+blog/views.py,e\7\e7a8c955252fc1494be19edcdaa6f927cd79a1a7
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

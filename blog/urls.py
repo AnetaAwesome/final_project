@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from django.views.generic import DetailView, RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
@@ -16,4 +16,5 @@ urlpatterns = [
     path('thank_you/', views.thank_you_view, name='thank_you'),
     path('blog_post/<int:pk>/comment/', views.CommentCreate.as_view(), name='comment_create'),
     path('about_me/', views.AboutMe.as_view(), name='about_me'),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
