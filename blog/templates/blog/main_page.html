@@ -50,9 +50,17 @@
 
 <div class="rightcolumn">
     <div class="card">
+ feature/login
     <div class="card">
 
+=======
+feature/sub_page
+       
+master
     <form style="margin:auto;">
+
+    <form>
+ master
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <input name="q_s" type="text" placeholder="Szukaj...">
@@ -62,6 +70,7 @@
     </form>
 
 </div>
+feature/sub_page
 
 <div class="card">
 
@@ -75,6 +84,16 @@
 
         {% endfor %}
 
+=======
+    <div class="card">
+      <h4>OSTATNIE WPISY</h4>
+        <p> {% for blogpost in object_list %}
+
+            <h4> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }} </a></h4>
+
+            {% endfor %}
+        </p>
+master
     </div>
 </div>
 
