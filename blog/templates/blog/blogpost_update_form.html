@@ -10,7 +10,10 @@
     <table>
         {{ form }}
 
-            <tr><td><input type="submit" value="Aktualizuj"></td></tr>
+            <tr>
+            <td>{% if cancel %} <a href="{{ cancel }}"> Anuluj </a> {% endif %}</td>
+            <td><input type="submit" value="Aktualizuj"></td>
+            </tr>
     </table>
 </form>
 

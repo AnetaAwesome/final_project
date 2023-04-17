@@ -1,10 +1,11 @@
+from django.contrib.auth import login
 from django.db.models import Q
-from django.shortcuts import render, redirect
 from django.http import JsonResponse
+from django.shortcuts import render, redirect
 from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, TemplateView, UpdateView, DeleteView, ListView
 from .models import BlogPost, Contact, Comment
-from .forms import BlogPostForm, ContactForm, CommentForm
+from .forms import BlogPostForm, ContactForm, CommentForm, CustomUserCreationForm
 from blog import forms
 
 
@@ -72,9 +73,7 @@ class CommentCreate(CreateView):
 
     def form_valid(self, form):
         form.instance.post_id = self.kwargs['pk']
-        super().form_valid(form)
-        response_data = {'message': 'Success!'}
-        return JsonResponse(response_data)
+        return super().form_valid(form)
 
     def get_success_url(self):
         pk = self.kwargs["pk"]
@@ -102,3 +101,17 @@ def contact_form(request):
 
 def thank_you_view(request):
     return render(request, 'blog/thank_you.html')
+
+
+def register(request):
+    if request.method == "GET":
+        return render(
+            request, "blog/register.html",
+            {"form": CustomUserCreationForm}
+        )
+    elif request.method == "POST":
+        form = CustomUserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect(reverse("main_page"))

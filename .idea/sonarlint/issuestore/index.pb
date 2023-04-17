@@ -9,8 +9,6 @@ L
 final_project_django/asgi.py,6\5\65c39dbe5d8eb624135eb41c4ccb209ac5613c59
 L
 final_project_django/wsgi.py,1\8\1857e19d03446bf6c66abb53221b1409b54d32cd
-9
-	manage.py,3\1\3156ad13e4d695cd526bbb7b031016ecba842270
 @
 blog/__init__.py,2\c\2cc1fb7137ff20ed48461a344f6d86cdbd47c8ff
 K
@@ -79,14 +77,10 @@ w
 G.idea/sonarlint/issuestore/0/1/01b6c2afdb134d0e3ffd86660bbe0591060d76fe,d\f\df7918e4de9e7f743e1f2f1b51cc7bc59b9f715f
 w
 G.idea/sonarlint/issuestore/6/e/6ea1439f921397c8aeadfa4bc58b8c2619a1d4ce,3\e\3e92864b618c5dd6706e84b969922252ed94b327
-R
-"blog/templates/blog/thank_you.html,9\5\95ec96764cc00bd86aa9ee1813480ddd29a83a22
 w
 G.idea/sonarlint/issuestore/6/2/6294dc75d76903aecbd8b625d91b3cf375f2effc,0\c\0cf9f9988eac507fffb578a21be61c10769d6a4a
 w
 G.idea/sonarlint/issuestore/f/4/f4f746a4a68b0f7313ad890b526aa1e62ea0e678,8\1\8141b92710f01eedd269ca2986bfa482cd18d7e4
-L
-final_project_django/urls.py,e\7\e7b5399defba4867d6f1960e3ef01eca4da86975
 w
 G.idea/sonarlint/issuestore/b/f/bf26e38c6077dc99b98bdb7696e470de283480be,d\8\d81ba14e374526bee56e981572c66430ffec6cf9
 w
@@ -111,8 +105,6 @@ w
 G.idea/sonarlint/issuestore/1/8/18214068b58c1008534ca39a211bf932cd4ed0b3,9\7\97659ba70f40d964d0787601c3b4f52b095cac82
 w
 G.idea/sonarlint/issuestore/e/7/e7b5399defba4867d6f1960e3ef01eca4da86975,b\7\b73c2d410cd0d0f4e035d61b446857f957e653b7
-=
-blog/forms.py,8\d\8dc45ed33dbcc8b65458ba016179df9d26f67b91
 w
 G.idea/sonarlint/issuestore/e/f/efe5a2c5bf354f630de7724de65c006176ab5f13,8\6\866bf9e0d57da1305b7d8f521048159a000100a7
 w
@@ -125,15 +117,17 @@ w
 G.idea/sonarlint/issuestore/d/c/dc484b9c2f083a8413c30fe9947246b4642af1bb,0\0\009f204cd79566b4bbc1a122ac03111e1d77556f
 w
 G.idea/sonarlint/issuestore/c/a/cab4ef53a5387330efc599c18f64ec4b767a3d6e,4\0\40d3fac504fde373c41ff48b0e2fb2a1699f7cbd
-W
-'blog/templates/blog/confirm_delete.html,3\4\34c8723ee1b7c559a6803a93bae633d93126546b
 Y
 )blog/templates/blog/create_post_view.html,1\4\140629231190d41a7eaeb8c8c37468e69d31b1c7
->
-blog/models.py,9\0\90f4c37dbfd7a96a1fb4496187f7e1fe7d61f3cf
-=
-blog/tests.py,a\d\ad2fa097158bb799ebb227eaa60d28b415e3f7c6
-=
-blog/views.py,e\7\e7a8c955252fc1494be19edcdaa6f927cd79a1a7
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+@
+requirements.txt,1\9\19359a61ae2446b51b549167b014da2fcf265768
+U
+%blog/templates/blog/contact_form.html,6\c\6c2a554139bf6a3a058c9989263bec744e95f1e7
+M
+blog/templates/blog/menu.html,5\8\58b79e5cff25927b9a9a923c3f207ca60a854d85
+P
+ final_project_django/settings.py,5\0\502ee993f490138e3ccbfe8e0fe9ffcfa6e4608c
+L
+final_project_django/urls.py,e\7\e7b5399defba4867d6f1960e3ef01eca4da86975

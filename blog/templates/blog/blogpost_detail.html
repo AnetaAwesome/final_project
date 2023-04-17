@@ -16,11 +16,13 @@
 <p><i> Utworzono: {{ blogpost.creation_date }}</i></p>
 
  <div>
-        {% if user.is_authenticated %}
+        {% if user.is_superuser %}
             <a href="{% url 'blogpost_update' blogpost.pk %}"> Edytuj</a>
             <a href="{% url 'blogpost_delete' blogpost.pk %}"> Usuń </a>
+        {% elif user.is_staff %}
+            <a href="{% url 'blogpost_update' blogpost.pk %}"> Edytuj</a>
         {% else %}
-            <a href="{% url 'login' %}">Zaloguj się aby dodać komentarz</a>
+            <a href="{% url 'main_page' %}">Powrót na stronę główną</a>
         {% endif %}
 
     </div>

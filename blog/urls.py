@@ -17,4 +17,5 @@ urlpatterns = [
     path('blog_post/<int:pk>/comment/', views.CommentCreate.as_view(), name='comment_create'),
     path('about_me/', views.AboutMe.as_view(), name='about_me'),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('register/', views.register, name='register'),
 ]

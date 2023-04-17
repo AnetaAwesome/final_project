@@ -16,7 +16,7 @@ class BlogTests(TestCase):
         second_post = BlogPost(title="Second post", content="Second post content")
         second_post.save()
 
-        comment = Comment(post=first_post, name="1st comment", email="joe@gmail.com", body="comment body")
+        comment = Comment(post=first_post, name="Joe", email="joe@gmail.com", body="comment body")
         comment.save()
 
         Contact(first_name="Michal", last_name="Nowotka", email_field="joe@gmail.com", note="contact me!").save()
@@ -28,11 +28,14 @@ class BlogTests(TestCase):
         print("test_post_exist")
         self.assertEqual(BlogPost.objects.get(title="First post").content, "First post content")
 
-
+    def test_comment_exist(self):
+        print("test_comment_exist")
+        self.assertEqual(Comment.objects.get(post="1").name, "Joe")
 
     def test_contact_exist(self):
-        print("test_post_exist")
+        print("test_contact_exist")
         self.assertEqual(Contact.objects.get(last_name="Nowotka").last_name, "Nowotka")
+
 
     def test_main_page(self):
         print("test_main_page")
