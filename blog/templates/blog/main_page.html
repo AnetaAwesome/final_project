@@ -33,6 +33,7 @@
     </div>
     <div class="card"></div>
 
+
     <div class="rightcolumn">
         <div class="card">
         <div class="card">
@@ -43,24 +44,20 @@
             <input name="q_s" type="text" placeholder="Szukaj...">
             <button title="Search"><i class="fa fa-search"></i></button>
             <a href="{% url 'main_page' %}" ></a>
-
+  
         </form>
-
     </div>
 
     <div class="card">
+      <div style="margin:auto;max-width:800px">
+        <h4>OSTATNIE WPISY</h4>
+          {% for blogpost in object_list %}
 
-        <div style="margin:auto;max-width:800px">
-          <h4>OSTATNIE WPISY</h4>
-
-             {% for blogpost in object_list|dictsortreversed:"creation_date" %}
-
-                <p> <a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }} </a></p>
-                <hr>
-
-            {% endfor %}
-
-        </div>
+            <p><a href="{% url 'blogpost_detail' blogpost.pk %}"> {{ blogpost.title }} </a></p>
+            <hr>
+          {% endfor %}
+         
+       </div>
     </div>
 
         <div class="card"></div>
