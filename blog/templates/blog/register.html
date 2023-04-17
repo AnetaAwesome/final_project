@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+
+<title> Rejestracja</title>
+
+{% block main_content %}
+
+<h3>Zarejestruj się</h3>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Zarejestruj się">
+    </form>
+
+    <a href="{% url 'login' %}">Powrót do logowania</a>
+
+{% endblock %}
